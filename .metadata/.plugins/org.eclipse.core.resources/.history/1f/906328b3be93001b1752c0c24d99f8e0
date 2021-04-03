@@ -1,0 +1,27 @@
+package com.data_structure;
+
+public class HashTable<T> {
+	@SuppressWarnings("rawtypes")
+	Entry[] arrayHash;
+	int size;
+	public HashTable(int size) {
+		// TODO Auto-generated constructor stub
+		this.size = size;
+		arrayHash = new Entry[this.size];
+		for (int i = 0; i < arrayHash.length; i++) {
+			arrayHash[i] = new Entry<T>();
+		}
+	}
+	public int generateHash(int key) {
+		// TODO Auto-generated method stub
+		return key%size;
+	}
+	
+	@SuppressWarnings("unused")
+	public void put(int key, T value) {
+		// TODO Auto-generated method stub
+		int index = generateHash(key);
+		Entry<T> arrVal = arrayHash[index];
+	}
+
+}

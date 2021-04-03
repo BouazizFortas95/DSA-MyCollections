@@ -1,0 +1,35 @@
+package com.data_structure;
+
+public class QueueArray {
+	Object[] queueArray;
+	int rear, front, size;
+	
+	public QueueArray(int size) {
+		// TODO Auto-generated constructor stub
+		this.size = size;
+		queueArray = new Object[this.size];
+		this.front = -1;
+		this.rear = -1;
+	}
+	
+	private Boolean isFull() {
+		// TODO Auto-generated method stub
+		return (rear==size-1);
+	}
+	
+	private Boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return (front==-1 || front > rear);
+	}
+	
+	public void queue() {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void deQueue() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

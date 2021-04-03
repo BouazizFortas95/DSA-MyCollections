@@ -1,0 +1,11 @@
+package com.data_structure;
+
+public class MainNodeDouble {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		NodeDouble<Integer> node = new NodeDouble<Integer>(10, null, null);
+		QueueLinkedList<NodeDouble> name = new QueueLinkedList<NodeDouble>(node);
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.data_structure;
+
+public class NodeDouble {
+
+	public NodeDouble() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

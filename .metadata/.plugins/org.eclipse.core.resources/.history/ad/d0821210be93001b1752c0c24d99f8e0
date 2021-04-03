@@ -1,0 +1,10 @@
+package com.data_structure;
+
+public class HashTable {
+	@SuppressWarnings("rawtypes")
+	Entry[] arrayHash;
+	public HashTable(int size) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.data_structure;
+
+public class QueueLinkedList<T> {
+	NodeDouble<T> rear, front;
+	
+	public QueueLinkedList(NodeDouble<T> head) {
+		this.rear = head;
+		this.front = head;
+	}
+
+}

@@ -1,0 +1,49 @@
+package com.data_structure;
+
+public class QueueArray<T> {
+	Object[] queueArray;
+	int rear, front, size;
+	
+	public QueueArray(int size) {
+		// TODO Auto-generated constructor stub
+		this.size = size;
+		queueArray = new Object[this.size];
+		this.front = -1;
+		this.rear = -1;
+	}
+	
+	private Boolean isFull() {
+		// TODO Auto-generated method stub
+		return (rear==size-1);
+	}
+	
+	private Boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return (front==-1 || front > rear);
+	}
+	
+	public void queue(Object newItem) {
+		// TODO Auto-generated method stub
+		if(isFull()) {
+			System.err.println("Queue is Full!!");
+			return ;
+		}
+		rear = rear+1;
+		queueArray[rear] = newItem;
+		if(front==-1)
+			front = 1;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public T deQueue() {
+		// TODO Auto-generated method stub
+		if(isEmpty()) {
+			System.err.println("Queue is Empty!!");
+			return null;
+		}
+		T objOut = (T) queueArray[front];
+		front = front+1;
+		return objOut;
+	}
+
+}

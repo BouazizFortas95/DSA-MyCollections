@@ -1,0 +1,150 @@
+package com.collections;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		// TODO Dynamic Array
+		ArrayList<String> arrayList = new ArrayList<String>();
+		arrayList.add("Fares");
+		arrayList.add("Mohammed");
+		arrayList.add("Basset");
+		arrayList.add("Saif");
+		arrayList.remove(0);
+		for (String name : arrayList) {
+			System.out.println("My name is : "+name);
+		}
+		System.err.println("-----------------");
+		// TODO Linked List
+		LinkedList<Integer> linkedList = new LinkedList<Integer>();
+		linkedList.add(5);
+		
+		// TODO Stack
+		Stack<String> stack = new Stack<String>();
+		stack.push("Fares");
+		stack.push("Mohamed");
+		System.out.println("Name of Last Item : "+stack.pop());
+		
+		// TODO Queue
+		Queue<Integer> queue = new Queue<Integer>() {
+			
+			@Override
+			public <T> T[] toArray(T[] arg0) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public Object[] toArray() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public int size() {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+			
+			@Override
+			public boolean retainAll(Collection<?> arg0) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+			@Override
+			public boolean removeAll(Collection<?> arg0) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+			@Override
+			public boolean remove(Object arg0) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+			@Override
+			public Iterator<Integer> iterator() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public boolean isEmpty() {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+			@Override
+			public boolean containsAll(Collection<?> arg0) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+			@Override
+			public boolean contains(Object arg0) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+			@Override
+			public void clear() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public boolean addAll(Collection<? extends Integer> arg0) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+			@Override
+			public Integer remove() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public Integer poll() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public Integer peek() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public boolean offer(Integer e) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+			@Override
+			public Integer element() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public boolean add(Integer e) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+		};
+		queue.add(57);
+		System.out.println(queue.isEmpty());
+	}
+
+}

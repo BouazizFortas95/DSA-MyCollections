@@ -1,0 +1,10 @@
+package com.dsa.search;
+
+public class BinarSearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

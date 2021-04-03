@@ -1,0 +1,39 @@
+package com.dsa.search;
+
+public class BinarSearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int size = 1000000;
+		int[] numbers = new int[size];
+
+		for (int i = 0; i < numbers.length; i++) {
+			numbers[i] = i + 1;
+		}
+
+		int search = 22;
+		int low = 0;
+		int high = numbers.length - 1;
+		int mid = 0;
+		Boolean isFound = false;
+		while (isFound) {
+
+			mid = low + ((high - low) / 2);
+			if (numbers[mid] == search) {
+				System.out.println("number is found.");
+				break;
+			}
+			if (numbers[mid] < search) {
+				high = mid - 1;
+			}
+			if (numbers[mid] > search) {
+				low = mid + 1;
+			}
+			if (low > high) {
+				System.out.println("number is not found.");
+				break;
+			}
+		}
+	}
+
+}

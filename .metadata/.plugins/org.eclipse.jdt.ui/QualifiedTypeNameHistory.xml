@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.data_structure.LinkedList"/>
+<fullyQualifiedTypeName name="com.data_structure.Student"/>
+<fullyQualifiedTypeName name="com.data_structure.Node"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.PUSH"/>
+<fullyQualifiedTypeName name="com.data_structure.StackArray"/>
+<fullyQualifiedTypeName name="com.data_structure.DynamicArray"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.data_structure.QueueLinkedList"/>
+<fullyQualifiedTypeName name="com.data_structure.NodeDouble"/>
+<fullyQualifiedTypeName name="com.data_structure.Entry"/>
+<fullyQualifiedTypeName name="com.data_structure.HashTable"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="javax.xml.ws.Holder"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,41 @@
+package algo.notes.for_professional;
+
+public class MyBubbleSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] input = { 5, 63, 8, 86, 78, 45, 68, 52, 686, 386, 69 };
+		bubble_sort(input);
+	}
+
+	private static void bubble_sort(int arr[]) {
+		// TODO Auto-generated method stub
+		int n = arr.length;
+		int k;
+		for (int m = n; m >= 0; m--) {
+			for (int i = 0; i < n - 1; i++) {
+				k = i + 1;
+				if (arr[i] > arr[k]) {
+					swapNumbers(i, k, arr);
+				}
+			}
+		}
+		printNumbers(arr);
+	}
+
+	private static void swapNumbers(int j, int k, int[] arr) {
+		// TODO Auto-generated method stub
+		int tmp;
+		tmp = arr[j];
+		arr[j] = arr[k];
+		arr[k] = tmp;
+	}
+
+	private static void printNumbers(int[] arr) {
+		// TODO Auto-generated method stub
+		System.out.print("|");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(" " + arr[i] + " |");
+		}
+	}
+}
